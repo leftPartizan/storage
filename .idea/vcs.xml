@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Architecture" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Architecture-Components-Homework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Architecture/Architecture" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Architecture/mvvmEpam" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Architecture/storage" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Architecture_MVVM" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Architecture_mvp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Architecture_old" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/KotlinHomeWork-master" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Navigation-master" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/UiListsHomeWork" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/UiListsHomeWork-master" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ui_part_1_homework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/uipart2homework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/uipart2homework — копия" vcs="Git" />
+  </component>
+</project>

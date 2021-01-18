@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="data"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/saveToPrefs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/saveToPrefs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save to prefs"
+        app:layout_constraintEnd_toStartOf="@id/loadFromPrefs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText"
+        app:layout_constraintBottom_toTopOf="@id/saveToInternal"/>
+
+    <Button
+        android:id="@+id/loadFromPrefs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load from prefs"
+        app:layout_constraintStart_toEndOf="@id/saveToPrefs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText"
+        app:layout_constraintBottom_toTopOf="@id/loadFromInternal"/>
+
+    <Button
+        android:id="@+id/saveToInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save internal"
+        app:layout_constraintEnd_toStartOf="@id/loadFromInternal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/saveToPrefs"
+        app:layout_constraintBottom_toTopOf="@id/saveToExternal"/>
+
+    <Button
+        android:id="@+id/loadFromInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load internal"
+        app:layout_constraintStart_toEndOf="@id/saveToInternal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loadFromPrefs"
+        app:layout_constraintBottom_toTopOf="@id/loadFromExternal"/>
+    <Button
+        android:id="@+id/saveToExternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save external"
+        app:layout_constraintEnd_toStartOf="@id/loadFromExternal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/saveToInternal"
+        app:layout_constraintBottom_toTopOf="@id/saveToDB"/>
+
+    <Button
+        android:id="@+id/loadFromExternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load external"
+        app:layout_constraintStart_toEndOf="@id/saveToExternal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loadFromInternal"
+        app:layout_constraintBottom_toTopOf="@id/loadFromDB"/>
+    <Button
+        android:id="@+id/saveToDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save to DB"
+        app:layout_constraintEnd_toStartOf="@id/loadFromDB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/saveToExternal"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/loadFromDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="load internal"
+        app:layout_constraintStart_toEndOf="@id/saveToDB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loadFromExternal"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
